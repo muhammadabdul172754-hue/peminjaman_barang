@@ -2,7 +2,7 @@
 
 session_start();
 
-require 'config.php';
+require 'koneksi.php';
 
 // CEK LOGIN
 if (!isset($_SESSION['login'])) {
