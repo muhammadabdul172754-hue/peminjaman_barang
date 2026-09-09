@@ -14,7 +14,7 @@ $users = [
 
 echo "<h2>Generate Password Hash</h2>";
 echo "<hr>";
-
+// apapun password yang di-hash, simpan hash tersebut ke database, bukan password asli.
 foreach ($users as $user) {
     $hash = hashPassword($user['password']);
     
