@@ -1,0 +1,568 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.side {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    background: #176b40;
+    padding: 25px 15px;
+
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* LOGO */
+
+.brand {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+
+    padding: 15px 12px 30px;
+
+    text-align: center;
+}
+
+
+/* MENU */
+
+.side a {
+    display: block;
+
+    color: #dff3e8;
+    text-decoration: none;
+
+    padding: 13px 16px;
+    margin-bottom: 7px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+/* HOVER */
+
+.side a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+}
+
+
+/* MENU AKTIF */
+
+.side a.on {
+    background: white;
+    color: #176b40;
+
+    font-weight: 600;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.main {
+    margin-left: 250px;
+
+    min-height: 100vh;
+
+    padding: 30px;
+}
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+.top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.top h1 {
+    font-size: 28px;
+    color: #263238;
+}
+
+
+/* =====================================================
+   DASHBOARD CARDS
+===================================================== */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.card {
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+    border-left: 5px solid #176b40;
+}
+
+
+.card small {
+    display: block;
+
+    color: #7a858b;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+
+.card .num {
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #176b40;
+}
+
+
+/* =====================================================
+   BOX
+===================================================== */
+
+.box {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+    overflow-x: auto;
+}
+
+
+/* HEADER BOX */
+
+.head {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+.head h2 {
+    font-size: 19px;
+
+    color: #263238;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn {
+    display: inline-block;
+
+    background: #176b40;
+
+    color: white;
+
+    border: none;
+
+    text-decoration: none;
+
+    padding: 9px 15px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+
+.btn:hover {
+    background: #0f5431;
+
+    transform: translateY(-1px);
+}
+
+
+/* BUTTON MERAH */
+
+.btn.red {
+    background: #e53935;
+}
+
+
+.btn.red:hover {
+    background: #c62828;
+}
+
+
+/* BUTTON ABU */
+
+.btn.gray {
+    background: #757575;
+}
+
+
+.btn.gray:hover {
+    background: #555;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 700px;
+}
+
+
+table th {
+    background: #f1f6f3;
+
+    color: #176b40;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    padding: 13px;
+
+    border-bottom: 2px solid #dce8e1;
+}
+
+
+table td {
+    padding: 13px;
+
+    border-bottom: 1px solid #edf0ef;
+
+    font-size: 13px;
+
+    color: #455a64;
+}
+
+
+table tr:hover td {
+    background: #f9fcfa;
+}
+
+
+/* =====================================================
+   ACTION
+===================================================== */
+
+.actions {
+    white-space: nowrap;
+}
+
+
+.actions .btn {
+    margin-right: 5px;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.formgrid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.field.full {
+    grid-column: 1 / -1;
+}
+
+
+.field label {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #455a64;
+}
+
+
+.field input,
+.field select {
+    width: 100%;
+
+    padding: 11px 13px;
+
+    border: 1px solid #d7dedb;
+
+    border-radius: 8px;
+
+    background: white;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.field input:focus,
+.field select:focus {
+    border-color: #176b40;
+
+    box-shadow: 0 0 0 3px rgba(23, 107, 64, 0.1);
+}
+
+
+/* =====================================================
+   BARANG PEMINJAMAN
+===================================================== */
+
+.rowitem {
+    display: grid;
+
+    grid-template-columns: 1fr 150px;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+.rowitem select,
+.rowitem input {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #d7dedb;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+
+.rowitem select:focus,
+.rowitem input:focus {
+    border-color: #176b40;
+}
+
+
+/* =====================================================
+   BADGE STATUS
+===================================================== */
+
+.badge {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: #e7f5ec;
+
+    color: #176b40;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   ALERT
+===================================================== */
+
+.alert {
+    background: #e8f5e9;
+
+    color: #176b40;
+
+    border-left: 5px solid #176b40;
+
+    padding: 13px 16px;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 13px;
+}
+
+
+.alert.warn {
+    background: #fff3e0;
+
+    color: #e65100;
+
+    border-left-color: #fb8c00;
+}
+
+
+/* =====================================================
+   PRINT
+===================================================== */
+
+@media print {
+
+    .side,
+    .top,
+    .btn {
+        display: none !important;
+    }
+
+    .main {
+        margin-left: 0;
+
+        padding: 0;
+    }
+
+    .box {
+        box-shadow: none;
+
+        padding: 0;
+    }
+
+    body {
+        background: white;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .side {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+    }
+
+
+    .main {
+        margin-left: 0;
+
+        padding: 20px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .formgrid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .field.full {
+        grid-column: auto;
+    }
+
+
+    .top {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+}
