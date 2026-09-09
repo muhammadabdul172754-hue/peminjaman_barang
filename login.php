@@ -110,7 +110,7 @@ if (isset($_POST['login'])) {
 </head>
 <body>
     <div class="login-box">
-        <img src="assets/logo-sekolah.jpg" alt="logo-sekolah" class="logo-sekolah">
+        <img src="assets/logo-sekolah.jpg" alt="logo sekolah, identitas lembaga pendidikan yang digunakan pada halaman login SIMBAR" class="logo-sekolah">
         
         <h1 class="login-title">SIMBAR</h1>
         <h3 class="login-title">Sistem Operasi Peminjaman Barang</h3>
